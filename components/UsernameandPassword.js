@@ -22,8 +22,10 @@ const UsernameandPassword = () => {
         value={Password}
         onChangeText = {(Password)=>{setPass(Password)}}
       />
+      <View style={{width:'100%'}}>
       <Button onPress={showData} title="Submit"
       color = 'purple'/>
+      </View>
     </View>
   )
 }
