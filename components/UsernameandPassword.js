@@ -22,7 +22,8 @@ const UsernameandPassword = () => {
         value={Password}
         onChangeText = {(Password)=>{setPass(Password)}}
       />
-      <Button onPress={showData} title="Submit"/>
+      <Button onPress={showData} title="Submit"
+      color = 'purple'/>
     </View>
   )
 }
@@ -38,4 +39,5 @@ const styles = StyleSheet.create({
       marginBottom:10,
       backgroundColor:'lightgray'
   }
+
 })
