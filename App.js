@@ -3,6 +3,9 @@ import React from 'react'
 import User from './components/User'
 import Lotsofgreeting from './components/lotsofgreeting'
 import MycustomTextWith from './components/MycustomTextWith'
+import Count from './components/Count'
+import Inputtext from './components/Inputtext'
+import UsernameandPassword from './components/UsernameandPassword'
 
 export default function App() {
 
@@ -13,7 +16,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <Lotsofgreeting/> */}
-      <MycustomTextWith/>
+      {/* <MycustomTextWith/> */}
+      {/* <Count/> */}
+      {/* <Inputtext/> */}
+      <UsernameandPassword/>
     </View>
     
   )
