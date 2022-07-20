@@ -1,30 +1,43 @@
-import { StyleSheet, Text, View , TextInput } from 'react-native'
+import { StyleSheet, Text, View , TextInput ,container} from 'react-native'
 import React,{useState} from 'react'
 import { Button } from 'react-native-web';
+import App from '../App';
 
 const UsernameandPassword = () => {
   const [Email,setEmail]=useState('');
-  const [Password,setPass]=useState('');
-  const showData = () => {
+  const [Name,setName]=useState('');
+  /* const showData = () => {
     alert('Email:'+Email+"\n"+'Password:'+Password)
+  } */
+  const checkTextInput = () => {
+    if (!Name.trim()) {
+      alert('Please Enter Name');
+      return;
+    }
+    if (!Email.trim()) {
+      alert('Please Enter Email');
+      return;
+    }
+    alert('Success')
   };
   return (
     <View style={{flex:1,marginTop:20,alignItems:'center'}}>
       <TextInput
-        style ={styles.textInput}
+        style ={styles.textInputStyle}
         placeholder='Email'
         value={Email}
         onChangeText = {(Email)=>{setEmail(Email)}}
       />
       <TextInput
-        style ={styles.textInput}
-        placeholder='Password'
-        value={Password}
-        onChangeText = {(Password)=>{setPass(Password)}}
+        style ={styles.textInputStyle}
+        placeholder='Name'
+        value={Name}
+        onChangeText = {(Name)=>{setName(Name)}}
       />
-      <View style={{width:'100%'}}>
-      <Button onPress={showData} title="Submit"
-      color = 'purple'/>
+      <View style={{width:'100%' , marginTop:15}}>
+      <Button onPress={checkTextInput}
+      title="Submit"
+      color = 'purple' />
       </View>
     </View>
   )
@@ -33,13 +46,15 @@ const UsernameandPassword = () => {
 export default UsernameandPassword
 
 const styles = StyleSheet.create({
-  textInput :{
-      width:250,
-      height:45,
-      padding:10,
-      marginTop:20,
-      marginBottom:10,
-      backgroundColor:'lightgray'
+  container: {
+    flex: 1,
+    padding: 35,
+  },
+  textInputStyle :{
+      width:'100%',
+      height:40,
+      paddingHorizontal:5,
+      marginTop:15,
+      borderWidth:0.5
   }
-
-})
+});
