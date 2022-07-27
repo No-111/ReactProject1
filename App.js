@@ -11,6 +11,8 @@ import ImagewithText from './components/ImagewithText'
 import ButtonEx from './components/ButtonEx'
 import TouchableEx from './components/TouchableEx'
 import TouchablePr from './components/TouchablePr'
+import Dynamicstyle from './components/Dynamicstyle'
+import ModelExample from './components/ModelExample'
 
 export default function App() {
 
@@ -29,7 +31,9 @@ export default function App() {
       {/* <ImagewithText/> */}
       {/* <ButtonEx/> */}
       {/* <TouchableEx/> */}
-      <TouchablePr/>
+      {/* <TouchablePr/> */}
+      {/* <Dynamicstyle/> */}
+      <ModelExample/>
     </View>
     
   )
