@@ -22,7 +22,7 @@ const TouchablePr = () => {
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => onPress('Login Using Facebook')}>
+                <TouchableOpacity onPress={() => onPress('Login Using Google Plus')}>
                     <View style={styles.buttonGPlusStyle}>
                         <Image
                             source={require('../assets/google-plus.png')}
