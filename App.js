@@ -10,6 +10,7 @@ import AlertEx from './components/AlertEx'
 import ImagewithText from './components/ImagewithText'
 import ButtonEx from './components/ButtonEx'
 import TouchableEx from './components/TouchableEx'
+import TouchablePr from './components/TouchablePr'
 
 export default function App() {
 
@@ -27,7 +28,8 @@ export default function App() {
       {/* <AlertEx/> */}
       {/* <ImagewithText/> */}
       {/* <ButtonEx/> */}
-      <TouchableEx/>
+      {/* <TouchableEx/> */}
+      <TouchablePr/>
     </View>
     
   )
