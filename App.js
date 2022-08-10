@@ -3,7 +3,7 @@ import React from 'react'
 // import User from './components/User'
 // import Lotsofgreeting from './components/lotsofgreeting'
 // import MycustomTextWith from './components/MycustomTextWith'
-// import Count from './components/Count'
+import Count from './components/Count'
 // import Inputtext from './components/Inputtext'
 // import UsernameandPassword from './components/UsernameandPassword'
 // import AlertEx from './components/AlertEx'
@@ -25,7 +25,7 @@ export default function App() {
     <View style={styles.container}>
       {/* <Lotsofgreeting/> */}
       {/* <MycustomTextWith/> */}
-      {/* <Count/> */}
+      <Count/>
       {/* <Inputtext/> */}
       {/* <UsernameandPassword/> */}
       {/* <AlertEx/> */}
@@ -35,7 +35,7 @@ export default function App() {
       {/* <TouchablePr/> */}
       {/* <Dynamicstyle/> */}
       {/* <ModelExample/> */}
-      <ModelPC/>
+      {/* <ModelPC/> */}
     </View>
     
   )
